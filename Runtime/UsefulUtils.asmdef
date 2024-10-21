@@ -1,6 +1,6 @@
 {
-    "name": "j0kai.UsefulUtils",
-    "rootNamespace": "",
+    "name": "UsefulUtils",
+    "rootNamespace": "UsefulUtils",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
