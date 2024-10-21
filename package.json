@@ -2,7 +2,7 @@
     "name": "com.j0kai.usefulutils",
     "version": "1.0.0",
     "displayName": "Useful Utils",
-    "description": "A bunch of useful utility functions/classes!",
+    "description": "A bunch of useful utility functions/classes for use in Unity projects!",
     "unity": "2020.3",
     "documentationUrl": "https://example.com/",
     "changelogUrl": "https://example.com/changelog.html",
