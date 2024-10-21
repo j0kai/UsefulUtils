@@ -1,0 +1,22 @@
+{
+    "name": "com.j0kai.usefulutils",
+    "version": "1.0.0",
+    "displayName": "Useful Utils",
+    "description": "A bunch of useful utility functions/classes!",
+    "unity": "2020.3",
+    "documentationUrl": "https://example.com/",
+    "changelogUrl": "https://example.com/changelog.html",
+    "licensesUrl": "https://example.com/licensing.html",
+    "author": {
+      "name": "j0kai",
+      "email": "kyjo1308@gmail.com",
+      "url": "https://j0kai.github.io"
+    },
+    "samples" : [
+      {
+        "displayName": "Sample Scene",
+        "description": "Sample Description",
+        "path": "Samples~/Sample Scene"
+      }
+    ]
+  }
