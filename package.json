@@ -4,9 +4,6 @@
     "displayName": "Useful Utils",
     "description": "A bunch of useful utility functions/classes for use in Unity projects!",
     "unity": "2020.3",
-    "documentationUrl": "https://example.com/",
-    "changelogUrl": "https://example.com/changelog.html",
-    "licensesUrl": "https://example.com/licensing.html",
     "author": {
       "name": "j0kai",
       "email": "kyjo1308@gmail.com",
