@@ -22,29 +22,29 @@ namespace UsefulUtils.Serialization
             return Path.Combine(m_DataPath, string.Concat(fileName, ".", m_FileExtension));
         }
 
-        public void Save(GameData data, bool overwrite)
+        public void Save<T>(T data, string fileName, bool overwrite)
         {
-            string fileLocation = GetPathToFile(data.Name);
+            string fileLocation = GetPathToFile(fileName);
 
             if (!overwrite && File.Exists(fileLocation))
-                throw new IOException($"File '{data.Name}' already exists and cannot be overwritten!");
+                throw new IOException($"File '{fileName}' already exists and cannot be overwritten!");
 
             File.WriteAllText(fileLocation, m_Serializer.Serialize(data));
         }
 
-        public GameData Load(string name)
+        public T Load<T>(string fileName)
         {
-            string fileLocation = GetPathToFile(name);
+            string fileLocation = GetPathToFile(fileName);
 
             if (!File.Exists(fileLocation))
-                throw new System.ArgumentException($"No persisted game data with name '{name}'");
+                throw new System.ArgumentException($"No persisted game data with name '{fileName}'");
 
-            return m_Serializer.Deserialize<GameData>(File.ReadAllText(fileLocation));
+            return m_Serializer.Deserialize<T>(File.ReadAllText(fileLocation));
         }
 
-        public void Delete(string name)
+        public void Delete(string fileName)
         {
-            string fileLocation = GetPathToFile(name);
+            string fileLocation = GetPathToFile(fileName);
 
             if(File.Exists(fileLocation))
                 File.Delete(fileLocation);

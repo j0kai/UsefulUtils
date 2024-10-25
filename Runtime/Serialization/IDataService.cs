@@ -4,9 +4,9 @@ namespace UsefulUtils.Serialization {
 
     public interface IDataService
     {
-        void Save(GameData data, bool overwrite = true);
-        GameData Load(string name);
-        void Delete(string name);
+        void Save<T>(T data, string fileName = "New Save", bool overwrite = true);
+        T Load<T>(string fileName);
+        void Delete(string fileName);
         void DeleteAll();
         IEnumerable<string> ListSaves();
     }
