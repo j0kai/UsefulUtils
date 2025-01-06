@@ -1,6 +1,6 @@
 {
     "name": "com.j0kai.usefulutils",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "displayName": "Useful Utils",
     "description": "A bunch of useful utility functions/classes for use in Unity projects!",
     "unity": "2020.3",
