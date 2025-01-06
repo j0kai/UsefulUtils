@@ -1,5 +1,8 @@
 using UnityEngine;
 
+/// <summary>
+/// Singleton that will persist through scene changes.
+/// </summary>
 public class PersistentSingleton<T> : MonoBehaviour where T : Component
 {
     [Tooltip("If this is true, this singleton will automatically be placed on the root level of the scene hierarchy.")]
@@ -9,7 +12,7 @@ public class PersistentSingleton<T> : MonoBehaviour where T : Component
     protected static bool IsApplicationQuitting = false;
 
     public static bool HasInstance => s_Instance != null;
-    public static T Current => s_Instance;
+    public static T TryGetInstance() => HasInstance ? s_Instance : null;
 
     protected static T s_Instance;
 
