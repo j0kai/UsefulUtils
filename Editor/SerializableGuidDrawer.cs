@@ -1,3 +1,5 @@
+#if UNITY_EDITOR
+
 using System;
 using System.Linq;
 using System.Text;
@@ -102,3 +104,5 @@ public class SerializableGuidDrawer : PropertyDrawer
             .ToString();
     }
 }
+
+#endif
