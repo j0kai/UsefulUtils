@@ -2,9 +2,6 @@ using UnityEngine;
 
 public class Singleton<T> : MonoBehaviour where T : Component
 {
-    [Tooltip("If this is true, this singleton will automatically be placed on the root level of the scene hierarchy.")]
-    public bool AutoUnparentOnAwake = true;
-
     // Tracks whether the application is shutting down.
     protected static bool IsApplicationQuitting = false;
 
